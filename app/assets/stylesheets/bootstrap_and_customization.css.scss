@@ -1,7 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
 $navbar-default-bg: #34495e;
 $navbar-default-border: #2c3e50;
 $navbar-default-link-color: #fff;
 $brand-primary: #34495e;
 $navbar-default-link-hover-color: #ecf0f1;
+$body-bg: #ecf0f1;
+$jumbotron-bg: white;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
