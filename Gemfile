@@ -24,6 +24,8 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+gem "bootstrap-sass", "~> 3.1.0.2"
+gem "devise", "~> 3.2.3"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -31,15 +33,15 @@ group :doc do
 end
 
 group :development, :test do
-gem 'sqlite3'
+	gem 'sqlite3'
 end
 
+# added bcrypt in attempt to bypass bundle install error for devise
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+	gem "bcrypt", "~> 3.1.7"
 end
-
-gem "bootstrap-sass", "~> 3.1.0.2"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
