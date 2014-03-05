@@ -36,11 +36,9 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-# added bcrypt in attempt to bypass bundle install error for devise
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
-	gem "bcrypt", "~> 3.1.7"
 end
 
 # Use ActiveModel has_secure_password
